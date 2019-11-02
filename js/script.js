@@ -42,16 +42,14 @@ function calculator(x, y) {
   }
 
   let effort = a * y ** b;
-  $(effortsInStaffMonths).text(
-    Math.round(effort * 100) / 100 + " staff-months"
-  );
+  $(effortsInStaffMonths).text(Math.round(effort * 100) / 100 + "");
 
   let tdev = c * effort ** d;
-  $(TimeForDevelopment).text(Math.round(tdev * 100) / 100 + " months");
+  $(TimeForDevelopment).text(Math.round(tdev * 100) / 100 + "");
 
   let ss = effort / tdev;
-  $(AverageStaffSize).text(Math.round(ss * 100) / 100 + " staff");
+  $(AverageStaffSize).text(Math.round(ss * 100) / 100 + "");
 
   let p = (y * 1000) / effort;
-  $(productivity).text(Math.round(p * 100) / 100 + " LOC / staff-month");
+  $(productivity).text(Math.round(p * 100) / 100 + "");
 }
