@@ -16,21 +16,15 @@
 
       <div class="main-form p-4 bg-warning">
         <div class="row">
-          <div class="col">
-            <div class="col">
-              <label for="devMode">Development mode</label>
-              <select
-                onchange="handleChange()"
-                id="devMode"
-                class="form-control"
-              >
-                <option value="1">Organic</option>
-                <option value="2">Semi Detached</option>
-                <option value="3">Embedded</option>
-              </select>
-            </div>
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 mt-2">
+            <label for="devMode">Development mode</label>
+            <select onchange="handleChange()" id="devMode" class="form-control">
+              <option value="1">Organic</option>
+              <option value="2">Semi Detached</option>
+              <option value="3">Embedded</option>
+            </select>
           </div>
-          <div class="col">
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 mt-2">
             <div class="form-group">
               <label for="numOfLines">Lines of code in (KLOC) </label>
               <input
@@ -48,25 +42,25 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <button class="btn btn-lg btn-secondary btn-block mt-5">
+          <button class="btn btn-lg btn-secondary btn-block mt-1">
             Effort in staff months:<span class="result">0</span
             ><span class="units"> staff-months</span>
           </button>
         </div>
         <div class="col-12">
-          <button class="btn btn-lg btn-secondary btn-block mt-5">
+          <button class="btn btn-lg btn-secondary btn-block mt-1">
             Time for development:<span class="result">0</span
             ><span class="units"> months</span>
           </button>
         </div>
         <div class="col-12">
-          <button class="btn btn-lg btn-secondary btn-block mt-5">
+          <button class="btn btn-lg btn-secondary btn-block mt-1">
             Average staff size:<span class="result">0</span
             ><span class="units"> staff</span>
           </button>
         </div>
         <div class="col-12">
-          <button class="btn btn-lg btn-secondary btn-block mt-5">
+          <button class="btn btn-lg btn-secondary btn-block mt-1">
             Productivity:<span class="result">0</span
             ><span class="units"> LOC/staff-months</span>
           </button>
