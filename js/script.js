@@ -10,7 +10,7 @@ var LinesOfCode = $("#numOfLines").val();
 function handleChange() {
   DevelopmentMode = $("#devMode").val();
   LinesOfCode = $("#numOfLines").val();
-
+  if (LinesOfCode === "") LinesOfCode = 0;
   calculator(DevelopmentMode, LinesOfCode);
 }
 

@@ -34,8 +34,9 @@
             <div class="form-group">
               <label for="numOfLines">Lines of code in (KLOC) </label>
               <input
+                onchange="handleChange()"
                 onkeyup="handleChange()"
-                type="text"
+                type="number"
                 class="form-control"
                 id="numOfLines"
                 aria-describedby="emailHelp"
