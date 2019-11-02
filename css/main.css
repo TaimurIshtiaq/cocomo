@@ -1,6 +1,12 @@
 .result {
-    color: rgb(255, 217, 0);
-    font-weight: 900;
-    font-size: 30px;
-    padding: 0 15px;
+  color: rgb(255, 217, 0);
+  font-weight: 900;
+  font-size: 30px;
+  padding: 0 15px;
+}
+
+.units {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 10px;
 }
