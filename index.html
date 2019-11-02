@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/jquery.js"></script>
+    <title>Project Management</title>
+  </head>
+
+  <body>
+    <div class="container bg-light mt-5 p-3">
+      <h1 class="text-center">Project Management "COCOMO"</h1>
+
+      <div class="main-form p-4 bg-warning">
+        <div class="row">
+          <div class="col">
+            <div class="col">
+              <label for="devMode">Development mode</label>
+              <select
+                onchange="handleChange()"
+                id="devMode"
+                class="form-control"
+              >
+                <option value="1">Organic</option>
+                <option value="2">Semi Detached</option>
+                <option value="3">Embedded</option>
+              </select>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="numOfLines">Lines of code in (KLOC) </label>
+              <input
+                onkeyup="handleChange()"
+                type="text"
+                class="form-control"
+                id="numOfLines"
+                aria-describedby="emailHelp"
+                placeholder="Number of Lines of Code"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button class="btn btn-lg btn-secondary btn-block mt-5">
+            Effort in staff months:<span class="result">0</span>
+          </button>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-lg btn-secondary btn-block mt-5">
+            Time for development:<span class="result">0</span>
+          </button>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-lg btn-secondary btn-block mt-5">
+            Average staff size:<span class="result">0</span>
+          </button>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-lg btn-secondary btn-block mt-5">
+            Productivity:<span class="result">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
